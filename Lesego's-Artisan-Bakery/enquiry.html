@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Form - Love's Kitchenette</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="nibble">
+    <h1>ORDER FORM</h1>
+
+    <div class="top-info">
+      <div><label>ORDER NO:</label><input type="text" /></div>
+      <div><label>DATE:</label><input type="date" /></div>
+    </div>
+
+    <section class="section">
+      <h2>Customer Information</h2>
+      <div class="grid-2">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Company" />
+        <input type="tel" placeholder="Phone No" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Address" class="full-width" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Order Details</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Item Description</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Discount</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+            <td><input type="number" /></td>
+            <td><input type="number" /></td>
+            <td><input type="number" /></td>
+            <td><input type="number" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section status-summary">
+      <div class="order-status">
+        <h3>Order Status</h3>
+        <label><input type="checkbox" /> Started</label>
+        <label><input type="checkbox" /> Completed</label>
+        <label><input type="checkbox" /> Delivered</label>
+      </div>
+      <div class="summary-box">
+        <label>Tax: <input type="number" /></label>
+        <label>Shipping: <input type="number" /></label>
+        <label>Total: <input type="number" /></label>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Delivery Details</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Date</th>
+            <th>Tracking No</th>
+            <th>Date Received</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="date" /></td>
+            <td><input type="text" /></td>
+            <td><input type="date" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>Notes</h2>
+      <textarea rows="4" placeholder="Additional comments..."></textarea>
+    </section>
+  </div>
+  </div>
+  
+  <footer class="links">
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Product</a>
+            <a href="enquiry.html">Enquiries</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+  </footer>
+</body>
+</html>

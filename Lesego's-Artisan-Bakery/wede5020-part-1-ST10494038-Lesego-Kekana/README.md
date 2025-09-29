@@ -26,4 +26,12 @@ a --> D[Contacts]
                     //https://www.geeksforgeeks.org/html/html-nav-tag/
                     //sathwika123
                     //https://www.geeksforgeeks.org/user/sathwika123/-->
-
+ <!--//code attribution   
+                        //this method was taken from codeAcademy
+                        //https://www.codecademy.com/catalogs
+                        Zach Sims>
+                        
+For my website i changed the background colors to soft cream white and my header and footer to sage green and added touch of burnt orange. 
+I removed pictures in my odder form. 
+Added links in all my pages for easier movement.
+my  pictures were not showing when i first submitted my website so i added the picture in my image folder and changed the naming conversion that is what i improved.

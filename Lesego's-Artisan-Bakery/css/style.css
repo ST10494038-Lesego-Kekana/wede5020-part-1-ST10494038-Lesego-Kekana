@@ -1,0 +1,212 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+header, footer{
+    background-color: #c6e2aa4a;
+    padding: 35px;
+    text-align: center;
+}
+ main{
+    padding: 3px;
+    margin: auto;
+    color: rgb(12, 1, 1);
+  font-family: 'Gill Sans',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  text-align: left;
+  }
+ header img{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+ }
+  a:hover {
+    color: rgb(5, 185, 11);
+  }
+  a{letter-spacing: 3px;
+
+  }
+  
+
+/* === Menu Sections === */
+.menu-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-section h2 {
+  border-bottom: 2px solid #ffb4a2;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+ display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+
+
+/* === Container === */
+#nibble {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* === Header === */
+#nibble h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #b85c38;
+  margin-bottom: 2rem;
+}
+
+/* === Top Info === */
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.top-info label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.top-info input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* === Section Headings === */
+.section h2 {
+  font-size: 1.6rem;
+  color: #6c4c4c;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ffe5d9;
+  padding-bottom: 0.5rem;
+}
+
+/* === Grid Layout === */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+/* === Inputs and Textarea === */
+input, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* === Tables === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  background-color: #eafaf1;
+  color: #4b4b4b;
+}
+
+/* === Status & Summary === */
+.status-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.order-status label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.summary-box label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* === Footer Navigation === */
+.links {
+  background-color: #c6e2aa4a;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+ nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #0f0501;
+  font-weight: 500;
+}
+
+.links nav a:hover {
+  text-decoration: underline;
+}
+.mission{
+  text-align: center;
+  font-family: 'Gill Sans',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger
+  }
+  .contact-card{
+    text-align: center;
+  }
+  .slogan{
+    font-style: oblique;
+    font-size: large;
+    color: #b85c38;
+  }
+
+
+
+
