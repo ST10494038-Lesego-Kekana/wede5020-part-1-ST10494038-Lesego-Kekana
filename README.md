@@ -1,4 +1,3 @@
-# wede5020-part-1-ST10494038-Lesego-Kekana
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/oiFBHqR2)
  Lesego's Artisen Bakery
  ST10494038-Lesego Kekana
@@ -18,7 +17,7 @@ a --> D[Contacts]
 <!--code attribution
                 //this method was taken from W^3 Schools
                 //https://www.w3schools.com/html/html_lists_unordered.asp
-                //Ståle Refsnes-->
+                //Ståle Refsnes--> 
 <!--//code attribution
                             //this method was taken from module manual
                             //The independet institute of education (pty) Ltd 2025-->
@@ -31,6 +30,7 @@ a --> D[Contacts]
                         //this method was taken from codeAcademy
                         //https://www.codecademy.com/catalogs
                         Zach Sims>
+                        
 For my website i changed the background colors to soft cream white and my header and footer to sage green and added touch of burnt orange. 
 I removed pictures in my odder form. 
 Added links in all my pages for easier movement.
@@ -59,6 +59,3 @@ I added a form in my contact since there was no form
         //This method was taken from Code with random 
         //https://www.codewithrandom.com/2022/10/24/lightbox-using-html-css/
         
-
-                        
-
