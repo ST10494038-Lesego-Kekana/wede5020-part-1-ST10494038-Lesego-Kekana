@@ -31,8 +31,34 @@ a --> D[Contacts]
                         //this method was taken from codeAcademy
                         //https://www.codecademy.com/catalogs
                         Zach Sims>
-                        
 For my website i changed the background colors to soft cream white and my header and footer to sage green and added touch of burnt orange. 
 I removed pictures in my odder form. 
 Added links in all my pages for easier movement.
 my  pictures were not showing when i first submitted my website so i added the picture in my image folder and changed the naming conversion that is what i improved.
+
+I made my pictures responve
+i improved my about page 
+I added the javascript Accordion,Leafflet,Lightbix, and DOM 
+Added an annimation text to my enquiry page which is my order form 
+I added a form in my contact since there was no form 
+
+
+<!--code attribution
+        //this method was taken from Search Engine Journal
+        //https://www.searchenginejournal.com/html-tags-attributes-seo/389503/
+        //Helen Pollitt
+        //https://www.searchenginejournal.com/author/helen-pollitt/
+
+
+
+<!--//code attribution
+             //this method was taken from module manual
+             //The independet institute of education (pty) Ltd 2025-->
+
+<!--//code attribution
+        //This method was taken from Code with random 
+        //https://www.codewithrandom.com/2022/10/24/lightbox-using-html-css/
+        
+
+                        
+
