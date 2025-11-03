@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesego's Artisan Bakery</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="Product-page">
+
+  <header>
+    <h1>Menu</h1>
+    <section class="slogan">
+      <p>Each nibble spins a tale</p>
+    </section>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" id="search" placeholder="Search menu items..." />
+    </section>
+
+    
+    <section id="menu-list"></section>
+
+    <section class="menu-section">
+      <h2>Breads</h2>
+      <ul>
+        <li><span>MultiOnion</span><span>R55.00</span></li>
+        <li><span>Sourdough</span><span>R45.00</span></li>
+        <li><span>Baguette</span><span>R45.00</span></li>
+        <li><span>Focaccia</span><span>R45.00</span></li>
+        <li><span>Rye Bread</span><span>R65.00</span></li>
+      </ul>
+    </section>
+
+    <section class="menu-section">
+      <h2>Cookies</h2>
+      <ul>
+        <li><span>Choco Chip</span><span>R48.00</span></li>
+        <li><span>Macaroon</span><span>R55.00</span></li>
+        <li><span>Brownie</span><span>R55.00</span></li>
+        <li><span>Oatmeal Raisins</span><span>R55.00</span></li>
+        <li><span>Butter Cookies</span><span>R55.00</span></li>
+      </ul>
+    </section>
+
+    <section class="menu-section">
+      <h2>Whole Cakes</h2>
+      <ul>
+        <li><span>Red Velvet</span><span>R520.00</span></li>
+        <li><span>Blueberry Cheesecake</span><span>R520.00</span></li>
+        <li><span>Lemon Cheesecake</span><span>R450.00</span></li>
+        <li><span>Sponge Cake</span><span>R450.00</span></li>
+        <li><span>Blackforest</span><span>R580.00</span></li>
+      </ul> 
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="product.html">Product</a>
+      <a href="enquiry.html">Enquiries</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    &copy; 2025 Artisan Bakery. All rights reserved.
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const quote = document.createElement("p");
+      quote.textContent = "“Success is sweet when baked with love and resilience.”";
+      quote.style.fontStyle = "italic";
+
+      const target = document.querySelector(".content-section") || document.querySelector("main");
+      target.appendChild(quote);
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuItems = [
+        { name: "MultiOnion", price: "R55.00" },
+        { name: "Sourdough", price: "R45.00" },
+        { name: "Choco Chip", price: "R48.00" },
+        { name: "Red Velvet", price: "R520.00" },
+        { name: "Macaroon", price: "R55.00" },
+        { name: "Blackforest", price: "R580.00" },
+        { name: "Oatmeal Raisins", price: "R55.00" },
+        { name: "Lemon Cheesecake", price: "R450.00" }
+      ];
+
+      const menuList = document.getElementById("menu-list");
+      const searchInput = document.getElementById("search");
+
+      function displayItems(items) {
+        menuList.innerHTML = "";
+        items.forEach(item => {
+          const div = document.createElement("div");
+          div.className = "menu-item";
+          div.innerHTML = `<strong>${item.name}</strong> - ${item.price}`;
+          menuList.appendChild(div);
+        });
+      }
+
+      searchInput.addEventListener("input", function () {
+        const query = this.value.toLowerCase();
+        const filtered = menuItems.filter(item =>
+          item.name.toLowerCase().includes(query)
+        );
+        displayItems(filtered);
+      });
+
+      displayItems(menuItems); 
+    });
+  </script>
+
+</body>
+</html>

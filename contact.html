@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Lesego's Artisan Bakery</title>
+
+  <meta name="description" content="Contact Lesego's Artisan Bakery in Halfway House for freshly baked breads, cakes, and cookies. Visit us or get directions on our interactive map." />
+  <meta name="keywords" content="Lesego's Artisan Bakery, contact bakery, artisan bread, cakes, cookies, Halfway House bakery, South Africa bakery" />
+  <meta name="author" content="Lesego's Artisan Bakery" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Contact Lesego's Artisan Bakery" />
+  <meta property="og:description" content="We’d love to hear from you! Visit or contact Lesego's Artisan Bakery in Halfway House." />
+  <meta property="og:image" content="images/Cookies.jpeg" />
+  <meta property="og:url" content="https://www.lesegosartisanbakery.co.za/contact.html" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Lesego's Artisan Bakery" />
+  <meta name="twitter:description" content="Reach out to Lesego's Artisan Bakery for your favorite freshly baked goods." />
+  <meta name="twitter:image" content="images/Cookies.jpeg" />
+
+  <link rel="canonical" href="https://www.lesegosartisanbakery.co.za/contact.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Lesego's Artisan Bakery",
+    "image": "https://www.lesegosartisanbakery.co.za/images/Cookies.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "23 Magwa Cres St., Halfway House",
+      "addressLocality": "Midrand",
+      "postalCode": "1682",
+      "addressCountry": "ZA"
+    },
+    "telephone": "+27 71 653 4798",
+    "email": "hallo@ArtisanBakery.com",
+    "url": "https://www.lesegosartisanbakery.co.za/contact.html"
+  }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  
+  <header>
+    <h1>Contact Us</h1>
+    <nav class="social-nav">
+      <a href="https://www.facebook.com/LesegosArtisanBakery" class="fa-brands fa-facebook"></a>
+      <a href="https://www.twitter.com/LesegosArtisanBakery" class="fa-brands fa-twitter"></a>
+      <a href="https://www.instagram.com/LesegosArtisanBakery" class="fa-brands fa-instagram"></a>
+    </nav>
+  </header>
+
+  <div class="contact-card">
+    <img src="images/Cookies.jpeg" alt="Cookies with sprinkles" class="contact-image"  />
+    <p class="tagline">We’d love to hear from you!</p>
+    <div class="contact-info">
+      <p>23 Magwa Cres St., Halfway House, 1682</p>
+      <p>+27 71 653 4798</p>
+      <p><a href="mailto:hallo@ArtisanBakery.com">hallo@ArtisanBakery.com</a></p>
+    </div>
+  </div>
+
+  <main>
+    <div id="map" style="height: 400px;"></div>
+    <script>
+      var map = L.map('map').setView([-26.1075, 28.0881], 15);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+      L.marker([-26.1075, 28.0881]).addTo(map)
+        .bindPopup('Lesego\'s Artisan Bakery<br>23 Magwa Cres St., Halfway House, 1682')
+        .openPopup();
+    </script>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="mailto:hallo@ArtisanBakery.com" method="post" enctype="text/plain">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="messageType">Type of Message:</label>
+        <select id="messageType" name="messageType" required>
+          <option value="">Select one...</option>
+          <option value="feedback">Feedback</option>
+          <option value="complaint">Complaint</option>
+          <option value="order">Order Enquiry</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+
+
+  </main>
+
+  <footer>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="product.html">Product</a>
+      <a href="enquiry.html">Enquiries</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>
